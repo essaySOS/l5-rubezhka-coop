@@ -1,6 +1,6 @@
 import PostalValidator from './src/PostalCodeSchema.js';
 import ipValidator from './src/IpAddressSchema.js';
-
+import UserValidator from './src/UserSchema.js';
 class Validator {
   postalCode() {
     return new PostalValidator();
@@ -8,6 +8,10 @@ class Validator {
 
   ipAddress() {
     return new ipValidator();
+  }
+
+  user(){
+    return  new UserValidator();
   }
 }
 
